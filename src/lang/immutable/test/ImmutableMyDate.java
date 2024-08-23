@@ -14,27 +14,30 @@ public class ImmutableMyDate {
 
     public int getYear() {
         return year;
-    }
 
-    public ImmutableMyDate setYear(int newYear) {
-
-        return new ImmutableMyDate(newYear, month, day);
     }
 
     public int getMonth() {
         return month;
     }
 
-    public ImmutableMyDate setMonth(int newMonth) {
-
-        return new ImmutableMyDate(year, newMonth, day);
-    }
-
     public int getDay() {
         return day;
     }
 
-    public ImmutableMyDate setDay(int newDay) {
+    // 불변객체에서 새로운 값을 지정
+    // 기존 값을 유지한 상태로 새로운 값을 새로운 인스턴스로 내보낼 때는 set -> with 로 이름을 설정해준다.
+    public ImmutableMyDate withYear(int newYear) {
+
+        return new ImmutableMyDate(newYear, month, day);
+    }
+
+    public ImmutableMyDate withMonth(int newMonth) {
+
+        return new ImmutableMyDate(year, newMonth, day);
+    }
+
+    public ImmutableMyDate withDay(int newDay) {
 
         return new ImmutableMyDate(year, month, newDay);
     }
