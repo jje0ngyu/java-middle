@@ -8,4 +8,8 @@ public class ValueAdder {
         value += addValue;
         return this;
     }
+
+    public int getValue() {
+        return value;
+    }
 }
