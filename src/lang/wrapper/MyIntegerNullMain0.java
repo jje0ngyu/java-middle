@@ -2,6 +2,8 @@ package lang.wrapper;
 
 public class MyIntegerNullMain0 {
 
+    // 기본형은 항상 값이 존재해야 한다.
+
     public static void main(String[] args) {
         int[] intArr = {-1, 0, 1, 2, 3};
         System.out.println(findValue(intArr, -1)); //-1

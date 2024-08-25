@@ -1,5 +1,6 @@
 package lang.wrapper;
 
+// 래퍼(wrapper) 클래스는 기본형을 객체로 만들어주는 클래스이다.
 public class MyInteger {
 
     private final int value;
