@@ -14,6 +14,7 @@ public class GetTimeMain {
         System.out.println("MINUTE_OF_HOUR = " + dt.get(ChronoField.MINUTE_OF_HOUR));
         System.out.println("SECOND_OF_MINUTE = " + dt.get(ChronoField.SECOND_OF_MINUTE));
 
+        // LocalDateTime 에는 자주 쓰는 ChronoField 기능을 간편하게 호출할 수 있는 메서드를 제공한다.
         System.out.println("편의 메서드 제공");
         System.out.println("YEAR = " + dt.getYear());
         System.out.println("MONTH_OF_YEAR = " + dt.getMonthValue());
@@ -22,6 +23,7 @@ public class GetTimeMain {
         System.out.println("MINUTE_OF_HOUR = " + dt.getMinute());
         System.out.println("SECOND_OF_MINUTE = " + dt.getSecond());
 
+        // 자주 사용하지 않는 메서드의 경우, 제공하지 않는다.
         System.out.println("편의 메서드에 없음");
         System.out.println("MINUTE_OF_DAY = " + dt.get(ChronoField.MINUTE_OF_DAY));
         System.out.println("SECOND_OF_DAY = " + dt.get(ChronoField.SECOND_OF_DAY));
